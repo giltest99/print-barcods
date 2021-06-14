@@ -25,7 +25,7 @@ btnPrint.addEventListener('click', () => {
         var barcode = document.createElement('img');
         barcode.id = skus[i];
         JsBarcode(barcode, skus[i]);
-        barcode.setAttribute('style','margin:1rem;width:300px')
+        barcode.setAttribute('style','margin:1rem;width:300px;height:120px')
         body.appendChild(barcode);
         body.setAttribute('style','display:flex;flex-direction:row;flex-wrap:wrap;align-content:flex-start;')
     }
