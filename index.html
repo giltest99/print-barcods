@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimer SKUS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="main-container">
+
+        <!-- <div class="manual-entries">
+
+            <table class="manual-entries__table">
+                <tr>
+                    <th class="manual-entries__table-head">REPRISE</th>
+                    <th class="manual-entries__table-head" contenteditable="true" title="Saisir le numéro de reprise"></th>
+                    <th class="manual-entries__table-head">MISSION</th>
+                    <th class="manual-entries__table-head" contenteditable="true" title="Saisir le numéro de mission"></th>
+                </tr>
+            </table>
+
+        </div> -->
+
+        <div id="buttons-area" class="buttons-area">
+
+            <button id="btn-import">IMPORTER</button>
+            <button id="btn-print">IMPRIMER</button>
+            <button id="btn-reset">RESET</button>
+
+        </div>
+
+        <div id="paste-zone" class="paste-zone">
+
+            <textarea id="paste-zone__data" class="paste-zone__data" placeholder="Coller les données..." autofocus></textarea>
+
+        </div>
+
+        
+
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/JsBarcode.all.min.js"></script>
+</body>
+</html>
