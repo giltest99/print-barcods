@@ -8,14 +8,14 @@ const btnReset = document.getElementById('btn-reset');
 
 btnImport.addEventListener('click', () => {
     let importTa = taImport.value.split('\n');
-    console.log(importTa);
+    console.log('importTa', importTa);
     const finalArray = [];
     for(line of importTa){
         if(line.trim() != ''){
-            finalArray.push(line);
+            finalArray.push(line.trim());
         }
     }
-    console.log(finalArray);
+    console.log('finalArray', finalArray);
     skus = finalArray;
     alert('Données importées !');
 });
